@@ -1,0 +1,29 @@
+{
+  "name": "math-mind-solver",
+  "version": "1.0.0",
+  "description": "Introducing MathMindSolver – your go-to web app for mastering increment and decrement math examples! Dive into the world of numbers and sharpen your skills with this intuitive tool. Whether you're a student honing your arithmetic prowess or a math enthusiast seeking a challenge, MathMindSolver is here to elevate your mathematical journey. Solve increment and decrement problems effortlessly, and watch your mathematical abilities soar. With MathMindSolver, every solution is a step closer to mathematical mastery. Start solving today and unleash your mathematical potential!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarksideEvil/Math-mind-solver.git"
+  },
+  "keywords": [
+    "math",
+    "increment&decrement"
+  ],
+  "author": "Behruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarksideEvil/Math-mind-solver/issues"
+  },
+  "homepage": "https://github.com/DarksideEvil/Math-mind-solver#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
