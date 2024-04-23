@@ -195,21 +195,6 @@ async function inspect(userAnswers) {
   return summary;
 }
 
-// const result = check([
-//   { num1: 22, num2: 20, userAnswer: 42, operation: "addition" },
-//   { num1: 44, num2: 6, userAnswer: 50, operation: "addition" },
-//   { num1: 27, num2: 20, userAnswer: 40, operation: "addition" },
-//   { num1: 84, num2: 20, userAnswer: 100, operation: "addition" },
-//   { num1: 11, num2: 24, userAnswer: 35, operation: "addition" },
-//   { num1: 95, num2: 22, userAnswer: 40, operation: "addition" },
-//   { num1: 22, num2: 20, userAnswer: 40, operation: "addition" },
-//   { num1: 22, num2: 20, userAnswer: 40, operation: "addition" },
-//   { num1: 22, num2: 20, userAnswer: 40, operation: "addition" },
-//   { num1: 22, num2: 20, userAnswer: 40, operation: "addition" },
-// ]);
-
-// console.log(result);
-
 module.exports = {
   check,
 };
