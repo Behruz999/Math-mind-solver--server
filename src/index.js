@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
-const cors = require("cors");
 const mainRouter = require("./mainRouter");
-
-app.use(cors());
+const secure = require('./private/secure')
+secure(app)
 app.use(express.json());
 
 app.use("/api", mainRouter);

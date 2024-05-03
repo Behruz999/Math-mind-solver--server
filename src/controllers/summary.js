@@ -131,20 +131,23 @@
 // below chatgpt improved
 
 async function check(req, res) {
+  const { userAnswers, min, sec } = req.body;
   try {
-    const result = await inspect(req.body.userAnswers);
+    const result = await inspect(userAnswers, min, sec);
     return res.status(200).json(result);
   } catch (err) {
     return res.status(500).send({ msg: err?.message });
   }
 }
 
-async function inspect(userAnswers) {
+async function inspect(userAnswers, min, sec) {
   let summary = {
     summaries: [],
     examplesCount: userAnswers.length,
     totalCorrect: 0,
     percentCorrect: 0,
+    min,
+    sec,
   };
 
   function evaluateOperation(num1, num2, userAnswer, operation) {
