@@ -2,19 +2,10 @@ const cors = require("cors");
 const allowedOrigins = [
   "https://math-mind-solver.netlify.app",
   "https://math-vozv.onrender.com",
+  "http://localhost:4000", // Add localhost:4000 for development
 ];
 
 module.exports = (app) => {
-  // app.use(
-  //   cors({
-  //     origin: allowedOrigins,
-  //     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  //     methods: ["GET", "POST"],
-  //     allowedHeaders: ["Content-Type", "Authorization"],
-  //     credentials: true,
-  //   })
-  // );
-
   app.use(
     cors({
       origin: function (origin, callback) {
